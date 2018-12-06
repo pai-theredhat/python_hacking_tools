@@ -4,12 +4,11 @@ import netfilterqueue
 
 
 def process_packet(packet):
-    print("inside process_packet")
     print(packet)
-    packet.accept()
+    packet.drop()
 
+#check whether /proc/sys/net/ipv4/ip_forward file is set to 1
 
 queue = netfilterqueue.NetfilterQueue()
 queue.bind(1, process_packet)
-print("queue is " + str(queue))
 queue.run()
